@@ -15,20 +15,27 @@ public class Jyanken_Chapter28 {
 		
 		//Scannerクラスのオブジェクトを生成する
 		Scanner scanner = new Scanner(System.in);
-		//入力した内容を取得する
-		String input = scanner.next();
-		//入力した内容を出力する
-	     System.out.println(input);     
+		    
 		
-		// 正しいじゃんけんの手であるか判定する
-		if(input.equals("r") || input.equals("s") || input.equals("p")) {
-			scanner.close();
-		}
-		else {
-			System.out.println("入力値がエラーです。正しい手 (r, s, p) を入力してください。");
+	     while(true){
+	    	 
+	    	//入力した内容を取得する
+	 		String input = scanner.next();
+	 		//入力した内容を出力する
+	 	     System.out.println(input); 
+	    	 
+	    	// 正しいじゃんけんの手であるか判定する
+	 		if(input.equals("r") || input.equals("s") || input.equals("p")) {
+	 			scanner.close();
+	 			return input;
+	 		}
+	 		else {
+	 			System.out.println("入力値がエラーです。正しい手 (r, s, p) を入力してください。");
+	 			continue;
+	 		}
+	 		
+	     }
 		
-		}
-		return input;
 	}
 	
 		public String getRandom() {
