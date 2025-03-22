@@ -16,7 +16,7 @@ public class Posts_Chapter07 {
 
 		try {
 			con = DriverManager.getConnection(
-					"dbc:mysql://localhost/challenge_java",
+					"jdbc:mysql://localhost/challenge_java",
 					"root",
 					"Yukino0123"
 					);
